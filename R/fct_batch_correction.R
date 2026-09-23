@@ -112,8 +112,13 @@ qc_rlsc <- function(tab, colv, or, span = 0.75, verbose = FALSE) {
                         y = ll$fitted,
                         xout = or)
 
+    # a fitted value of zero or below can not be used for correction (e.g. QC value of 0)
+    fit <- aa$y
+    fit[!is.finite(fit) | fit <= 0] <- NA
+
     # correct the variable according to the curve for all the samples
-    tab_corr[, i] <- tab[, i] / aa$y
+    tab_corr[, i] <- tab[, i] / fit
+    tab_corr[!is.finite(tab_corr[, i]), i] <- NA
 
     # print which variable has been corrected in order to monitor the progress
     if(verbose == TRUE) {

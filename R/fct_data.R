@@ -369,6 +369,8 @@ prepare_pca_data <- function(data = NULL,
 
   data <- data[data[, sampleid_raw_col] %in% c(id_qcpool, id_samples), ]
   data_m <- as.matrix(data[, feature_names])
+  # pcaMethods does not accept NaN or Inf
+  data_m[!is.finite(data_m)] <- NA
   keep_features <- apply(data_m, 2, function(x) {
     mean(is.na(x)) < 0.5
   })

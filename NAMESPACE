@@ -17,84 +17,110 @@ import(gt)
 import(shiny, except = c(dataTableOutput, renderDataTable))
 import(shiny, except = c(dataTableOutput, renderDataTable))
 
-importFrom(DT,dataTableOutput)
-importFrom(DT,datatable)
-importFrom(DT,renderDataTable)
+importFrom(DT,
+  dataTableOutput,
+  datatable,
+  renderDataTable
+)
 importFrom(bsicons,bs_icon)
-importFrom(bslib,card)
-importFrom(bslib,card_body)
-importFrom(bslib,nav_menu)
-importFrom(bslib,nav_panel)
-importFrom(bslib,nav_spacer)
-importFrom(bslib,navbar_options)
-importFrom(bslib,navset_card_tab)
-importFrom(bslib,page_navbar)
-importFrom(bslib,page_sidebar)
-importFrom(bslib,sidebar)
-importFrom(ggplot2,.data)
-importFrom(ggplot2,aes)
-importFrom(ggplot2,coord_flip)
-importFrom(ggplot2,element_line)
-importFrom(ggplot2,element_text)
-importFrom(ggplot2,facet_wrap)
-importFrom(ggplot2,geom_bar)
-importFrom(ggplot2,geom_boxplot)
-importFrom(ggplot2,geom_col)
-importFrom(ggplot2,geom_density)
-importFrom(ggplot2,geom_hline)
-importFrom(ggplot2,geom_line)
-importFrom(ggplot2,geom_point)
-importFrom(ggplot2,geom_polygon)
-importFrom(ggplot2,geom_text)
-importFrom(ggplot2,geom_vline)
-importFrom(ggplot2,ggplot)
-importFrom(ggplot2,guide_legend)
-importFrom(ggplot2,guides)
-importFrom(ggplot2,labs)
-importFrom(ggplot2,scale_fill_manual)
-importFrom(ggplot2,theme)
-importFrom(ggplot2,theme_minimal)
-importFrom(ggplot2,theme_void)
-importFrom(golem,activate_js)
-importFrom(golem,add_resource_path)
-importFrom(golem,bundle_resources)
-importFrom(golem,favicon)
-importFrom(golem,with_golem_options)
-importFrom(patchwork,plot_layout)
-importFrom(patchwork,plot_spacer)
-importFrom(patchwork,wrap_plots)
+importFrom(bslib,
+  card,
+  card_body,
+  nav_menu,
+  nav_panel,
+  nav_spacer,
+  navbar_options,
+  navset_card_tab,
+  page_navbar,
+  page_sidebar,
+  sidebar
+)
+importFrom(ggplot2,
+  .data,
+  aes,
+  coord_flip,
+  element_line,
+  element_text,
+  facet_wrap,
+  geom_bar,
+  geom_boxplot,
+  geom_col,
+  geom_density,
+  geom_hline,
+  geom_line,
+  geom_point,
+  geom_polygon,
+  geom_text,
+  geom_vline,
+  ggplot,
+  guide_legend,
+  guides,
+  labs,
+  scale_fill_manual,
+  theme,
+  theme_minimal,
+  theme_void
+)
+importFrom(golem,
+  activate_js,
+  add_resource_path,
+  bundle_resources,
+  favicon,
+  with_golem_options
+)
+importFrom(patchwork,
+  plot_layout,
+  plot_spacer,
+  wrap_plots
+)
 importFrom(pcaMethods,pca)
-importFrom(plotly,plotlyOutput)
-importFrom(plotly,renderPlotly)
+importFrom(plotly,
+  plotlyOutput,
+  renderPlotly
+)
 importFrom(readxl,read_xlsx)
 importFrom(rmarkdown,render)
-importFrom(shiny,HTML)
-importFrom(shiny,NS)
-importFrom(shiny,column)
-importFrom(shiny,incProgress)
-importFrom(shiny,shinyApp)
-importFrom(shiny,tagAppendAttributes)
-importFrom(shiny,tagList)
-importFrom(shiny,tags)
-importFrom(shiny,withProgress)
-importFrom(shinyWidgets,progressBar)
-importFrom(shinyWidgets,updateProgressBar)
-importFrom(shinyjs,disabled)
-importFrom(shinyjs,enable)
-importFrom(shinyjs,useShinyjs)
-importFrom(stats,approx)
-importFrom(stats,loess)
-importFrom(stats,median)
-importFrom(stats,model.matrix)
-importFrom(stats,qf)
-importFrom(stats,sd)
-importFrom(stats,var)
+importFrom(shiny,
+  HTML,
+  NS,
+  column,
+  incProgress,
+  shinyApp,
+  tagAppendAttributes,
+  tagList,
+  tags,
+  withProgress
+)
+importFrom(shinyWidgets,
+  progressBar,
+  updateProgressBar
+)
+importFrom(shinyjs,
+  disabled,
+  enable,
+  useShinyjs
+)
+importFrom(stats,
+  approx,
+  loess,
+  median,
+  model.matrix,
+  qf,
+  sd,
+  var
+)
 importFrom(stringr,str_sub)
 importFrom(sva,ComBat)
-importFrom(tidyr,contains)
-importFrom(tidyr,matches)
-importFrom(tidyr,pivot_longer)
-importFrom(utils,read.table)
-importFrom(utils,write.csv)
-importFrom(waiter,autoWaiter)
-importFrom(waiter,spin_loader)
+importFrom(tidyr,
+  contains,
+  matches,
+  pivot_longer
+)
+importFrom(utils,
+  read.table,
+  write.csv
+)
+importFrom(waiter,
+  autoWaiter,
+  spin_loader
+)

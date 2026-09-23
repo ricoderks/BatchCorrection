@@ -242,7 +242,7 @@ loess_bc <- function(data = NULL,
 #' @description
 #' Perform ComBat batch correction from the SVA package.
 #'
-#' @param data data.frame in wide format.
+#' @param data data.frame in wide format. NOTE: table needs to be features x samples!!!
 #' @param meta_data data.frame with the meta data.
 #' @param sampleid_raw_col character(1), name of the sample id column in the raw data.
 #' @param sampleid_meta_col character(1), name of the sample id column in the meta data.
